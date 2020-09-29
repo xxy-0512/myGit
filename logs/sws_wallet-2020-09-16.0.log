@@ -1,0 +1,300 @@
+2020/09/16 19:46:50.836[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 29708 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/16 19:46:50.850[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/16 19:46:50.884[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Wed Sep 16 19:46:50 CST 2020]; root of context hierarchy
+2020/09/16 19:46:51.526[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/16 19:46:52.039[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2834ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/16 19:46:52.113[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/16 19:46:52.114[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/16 19:46:52.202[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/16 19:46:52.202[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/16 19:46:52.204[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/16 19:46:52.209[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/16 19:46:52.210[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1325 ms
+2020/09/16 19:46:52.703[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/16 19:46:52.705[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/16 19:46:52.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/16 19:46:52.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/16 19:46:52.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/16 19:46:52.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/16 19:46:52.880[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7fad214a{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.5041304626935582798.6512/],AVAILABLE}
+2020/09/16 19:46:52.880[||||][INFO] o.e.j.s.Server.doStart[444]-Started @3677ms
+2020/09/16 19:46:53.264[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Wed Sep 16 19:46:50 CST 2020]; root of context hierarchy
+2020/09/16 19:46:53.314[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:46:53.315[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/16 19:46:53.315[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/16 19:46:53.317[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:46:53.317[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/16 19:46:53.347[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:46:53.348[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:46:53.385[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:46:53.762[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/16 19:46:53.796[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:46:53.796[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/16 19:46:53.808[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020/09/16 19:46:53.821[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@1373e3ee{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:46:53.823[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/16 19:46:53.826[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 3.216 seconds (JVM running for 4.623)
+2020/09/16 19:46:59.430[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Wed Sep 16 19:46:50 CST 2020]; root of context hierarchy
+2020/09/16 19:46:59.432[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/16 19:46:59.437[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@1373e3ee{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:46:59.438[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/16 19:46:59.441[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:46:59.442[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@7fad214a{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.5041304626935582798.6512/],UNAVAILABLE}
+2020/09/16 19:47:10.530[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 8952 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/16 19:47:10.533[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/16 19:47:10.566[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:47:10 CST 2020]; root of context hierarchy
+2020/09/16 19:47:11.005[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/16 19:47:11.456[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1897ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/16 19:47:11.513[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/16 19:47:11.515[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/16 19:47:11.667[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/16 19:47:11.667[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/16 19:47:11.668[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/16 19:47:11.673[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/16 19:47:11.673[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1107 ms
+2020/09/16 19:47:12.050[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/16 19:47:12.052[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/16 19:47:12.052[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/16 19:47:12.052[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/16 19:47:12.052[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/16 19:47:12.053[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/16 19:47:12.189[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@4733f6f5{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.7863772756466210495.6512/],AVAILABLE}
+2020/09/16 19:47:12.189[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2631ms
+2020/09/16 19:47:12.563[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:47:10 CST 2020]; root of context hierarchy
+2020/09/16 19:47:12.613[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:47:12.614[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/16 19:47:12.615[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/16 19:47:12.617[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:47:12.617[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/16 19:47:12.736[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:47:12.736[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:47:12.775[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:47:13.145[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/16 19:47:13.163[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:47:13.163[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/16 19:47:13.175[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020/09/16 19:47:13.185[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@3e14d390{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:47:13.187[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/16 19:47:13.191[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.851 seconds (JVM running for 3.632)
+2020/09/16 19:47:43.043[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:47:10 CST 2020]; root of context hierarchy
+2020/09/16 19:47:43.044[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/16 19:47:43.049[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@3e14d390{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:47:43.049[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/16 19:47:43.054[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:47:43.054[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@4733f6f5{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.7863772756466210495.6512/],UNAVAILABLE}
+2020/09/16 19:47:58.185[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 1656 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/16 19:47:58.187[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/16 19:47:58.221[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:47:58 CST 2020]; root of context hierarchy
+2020/09/16 19:47:58.696[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/16 19:47:59.167[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1981ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/16 19:47:59.224[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/16 19:47:59.225[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/16 19:47:59.376[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/16 19:47:59.377[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/16 19:47:59.378[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/16 19:47:59.384[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/16 19:47:59.385[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1164 ms
+2020/09/16 19:47:59.722[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/16 19:47:59.724[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/16 19:47:59.725[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/16 19:47:59.725[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/16 19:47:59.725[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/16 19:47:59.725[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/16 19:47:59.857[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@343fddd9{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.1756125635452982695.6512/],AVAILABLE}
+2020/09/16 19:47:59.858[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2674ms
+2020/09/16 19:48:00.231[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:47:58 CST 2020]; root of context hierarchy
+2020/09/16 19:48:00.362[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:48:00.363[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/16 19:48:00.363[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/16 19:48:00.365[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:48:00.365[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/16 19:48:00.396[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:48:00.396[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:48:00.432[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:48:00.813[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/16 19:48:00.830[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:48:00.831[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/16 19:48:00.842[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020/09/16 19:48:00.852[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@785ed99c{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:48:00.855[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/16 19:48:00.858[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.866 seconds (JVM running for 3.674)
+2020/09/16 19:51:47.042[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:47:58 CST 2020]; root of context hierarchy
+2020/09/16 19:51:47.043[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/16 19:51:47.050[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@785ed99c{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:51:47.050[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/16 19:51:47.054[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:51:47.054[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@343fddd9{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.1756125635452982695.6512/],UNAVAILABLE}
+2020/09/16 19:52:20.317[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 29324 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/16 19:52:20.319[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/16 19:52:20.358[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:52:20 CST 2020]; root of context hierarchy
+2020/09/16 19:52:20.798[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/16 19:52:21.257[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1951ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/16 19:52:21.311[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/16 19:52:21.312[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/16 19:52:21.463[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/16 19:52:21.463[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/16 19:52:21.464[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/16 19:52:21.470[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/16 19:52:21.470[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1112 ms
+2020/09/16 19:52:21.802[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/16 19:52:21.804[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/16 19:52:21.804[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/16 19:52:21.804[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/16 19:52:21.804[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/16 19:52:21.804[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/16 19:52:21.937[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@9ab310b{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.9188516091683746575.6512/],AVAILABLE}
+2020/09/16 19:52:21.937[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2632ms
+2020/09/16 19:52:22.299[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:52:20 CST 2020]; root of context hierarchy
+2020/09/16 19:52:22.436[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:52:22.437[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/16 19:52:22.437[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/16 19:52:22.439[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:52:22.439[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/16 19:52:22.470[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:52:22.470[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:52:22.506[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:52:22.867[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/16 19:52:22.884[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:52:22.885[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/16 19:52:22.896[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020/09/16 19:52:22.905[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@3dec3f87{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:52:22.907[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/16 19:52:22.911[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.792 seconds (JVM running for 3.605)
+2020/09/16 19:52:51.487[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Wed Sep 16 19:52:20 CST 2020]; root of context hierarchy
+2020/09/16 19:52:51.489[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/16 19:52:51.498[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@3dec3f87{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:52:51.499[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/16 19:52:51.502[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:52:51.503[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@9ab310b{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.9188516091683746575.6512/],UNAVAILABLE}
+2020/09/16 19:52:58.138[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 35660 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/16 19:52:58.140[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/16 19:52:58.174[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e1ef60: startup date [Wed Sep 16 19:52:58 CST 2020]; root of context hierarchy
+2020/09/16 19:52:58.625[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/16 19:52:59.093[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1930ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/16 19:52:59.153[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/16 19:52:59.155[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/16 19:52:59.323[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/16 19:52:59.323[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/16 19:52:59.324[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/16 19:52:59.329[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/16 19:52:59.329[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1155 ms
+2020/09/16 19:52:59.710[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/16 19:52:59.712[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/16 19:52:59.712[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/16 19:52:59.712[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/16 19:52:59.713[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/16 19:52:59.713[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/16 19:52:59.846[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7a6ea47d{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.2271510117635564076.6512/],AVAILABLE}
+2020/09/16 19:52:59.846[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2683ms
+2020/09/16 19:53:00.257[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e1ef60: startup date [Wed Sep 16 19:52:58 CST 2020]; root of context hierarchy
+2020/09/16 19:53:00.306[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:53:00.307[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:53:00.307[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/16 19:53:00.307[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/16 19:53:00.309[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/16 19:53:00.310[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/16 19:53:00.341[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:53:00.341[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:53:00.376[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 19:53:00.830[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/16 19:53:00.855[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 19:53:00.855[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/16 19:53:00.866[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020/09/16 19:53:00.876[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@546ed2a0{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 19:53:00.878[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/16 19:53:00.882[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.922 seconds (JVM running for 3.719)
+2020/09/16 19:53:30.431[||||][INFO] c.x.w.c.WalletDetailController.getWallet[41]-user id is2
+2020/09/16 20:02:03.149[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2e1ef60: startup date [Wed Sep 16 19:52:58 CST 2020]; root of context hierarchy
+2020/09/16 20:02:03.151[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/16 20:02:03.160[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@546ed2a0{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 20:02:03.161[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/16 20:02:03.167[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 20:02:03.168[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@7a6ea47d{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.2271510117635564076.6512/],UNAVAILABLE}
+2020/09/16 20:02:07.312[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 33120 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/16 20:02:07.313[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/16 20:02:07.348[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c481ff2: startup date [Wed Sep 16 20:02:07 CST 2020]; root of context hierarchy
+2020/09/16 20:02:07.787[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/16 20:02:08.241[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1870ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/16 20:02:08.297[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/16 20:02:08.298[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/16 20:02:08.446[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/16 20:02:08.447[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/16 20:02:08.448[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/16 20:02:08.453[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/16 20:02:08.453[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1105 ms
+2020/09/16 20:02:08.833[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/16 20:02:08.835[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/16 20:02:08.835[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/16 20:02:08.836[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/16 20:02:08.836[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/16 20:02:08.836[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/16 20:02:08.967[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@1c52552f{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.3693433833148646482.6512/],AVAILABLE}
+2020/09/16 20:02:08.968[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2597ms
+2020/09/16 20:02:09.327[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c481ff2: startup date [Wed Sep 16 20:02:07 CST 2020]; root of context hierarchy
+2020/09/16 20:02:09.375[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/16 20:02:09.376[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/16 20:02:09.377[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/16 20:02:09.377[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/16 20:02:09.378[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/16 20:02:09.379[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/16 20:02:09.409[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 20:02:09.409[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 20:02:09.445[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 20:02:09.880[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/16 20:02:09.899[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 20:02:09.899[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/16 20:02:09.910[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020/09/16 20:02:09.919[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@3dec3f87{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 20:02:09.921[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/16 20:02:09.925[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.794 seconds (JVM running for 3.554)
+2020/09/16 20:02:30.949[||||][INFO] c.x.w.c.WalletDetailController.getWallet[41]-user id is2
+2020/09/16 20:07:22.496[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c481ff2: startup date [Wed Sep 16 20:02:07 CST 2020]; root of context hierarchy
+2020/09/16 20:07:22.498[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/16 20:07:22.505[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@3dec3f87{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 20:07:22.505[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/16 20:07:22.509[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 20:07:22.509[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@1c52552f{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.3693433833148646482.6512/],UNAVAILABLE}
+2020/09/16 20:07:26.320[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 12092 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/16 20:07:26.322[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/16 20:07:26.363[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29a0cdb: startup date [Wed Sep 16 20:07:26 CST 2020]; root of context hierarchy
+2020/09/16 20:07:26.858[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/16 20:07:27.453[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2217ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/16 20:07:27.510[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/16 20:07:27.512[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/16 20:07:27.592[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/16 20:07:27.592[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/16 20:07:27.594[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/16 20:07:27.599[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/16 20:07:27.599[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1236 ms
+2020/09/16 20:07:27.976[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/16 20:07:27.978[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/16 20:07:27.978[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/16 20:07:27.978[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/16 20:07:27.979[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/16 20:07:27.979[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/16 20:07:28.112[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@e829999{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.6702171786480504212.6512/],AVAILABLE}
+2020/09/16 20:07:28.113[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2878ms
+2020/09/16 20:07:28.562[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29a0cdb: startup date [Wed Sep 16 20:07:26 CST 2020]; root of context hierarchy
+2020/09/16 20:07:28.611[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/16 20:07:28.612[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/16 20:07:28.612[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/16 20:07:28.613[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/16 20:07:28.614[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/16 20:07:28.615[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/16 20:07:28.652[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 20:07:28.652[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 20:07:28.687[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/16 20:07:29.060[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/16 20:07:29.081[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 20:07:29.081[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/16 20:07:29.094[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020/09/16 20:07:29.105[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@52f8a6f4{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 20:07:29.107[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/16 20:07:29.111[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 3.005 seconds (JVM running for 3.875)
+2020/09/16 20:07:53.363[||||][INFO] c.x.w.c.WalletDetailController.getWallet[41]-user id is2
+2020/09/16 20:09:14.152[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29a0cdb: startup date [Wed Sep 16 20:07:26 CST 2020]; root of context hierarchy
+2020/09/16 20:09:14.154[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/16 20:09:14.161[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@52f8a6f4{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/16 20:09:14.161[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/16 20:09:14.165[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/16 20:09:14.166[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@e829999{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.6702171786480504212.6512/],UNAVAILABLE}

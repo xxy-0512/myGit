@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxy.wallet.dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.xxy.wallet.pojo.User">
+        <id property="id" column="id" jdbcType="INTEGER"></id>
+        <result property="userName" column="user_name" jdbcType="VARCHAR"></result>
+        <result property="userPassword" column="user_password" jdbcType="VARCHAR"></result>
+        <result property="realName" column="real_name" jdbcType="VARCHAR"></result>
+        <result  property="phone" column="phone" jdbcType="VARCHAR"></result>
+        <result property="token" column="token" jdbcType="VARCHAR"></result>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"></result>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"></result>
+    </resultMap>
+    
+    <select id="getUserInfo" resultMap="BaseResultMap">
+        select id, user_name, user_password, real_name, phone, token, create_time, update_time from tb_userInfo where token = #{token}
+    </select>
+</mapper>

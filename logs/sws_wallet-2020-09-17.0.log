@@ -1,0 +1,1271 @@
+2020/09/17 15:58:40.445[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 23948 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 15:58:40.450[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 15:58:40.489[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48e92c5c: startup date [Thu Sep 17 15:58:40 CST 2020]; root of context hierarchy
+2020/09/17 15:58:41.120[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 15:58:41.621[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2687ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 15:58:41.693[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 15:58:41.695[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 15:58:41.771[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 15:58:41.771[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 15:58:41.773[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/17 15:58:41.779[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 15:58:41.779[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1290 ms
+2020/09/17 15:58:42.234[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 15:58:42.236[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 15:58:42.236[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 15:58:42.236[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 15:58:42.236[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 15:58:42.237[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 15:58:42.409[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@1934ad7c{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.1668850457353978521.6512/],AVAILABLE}
+2020/09/17 15:58:42.409[||||][INFO] o.e.j.s.Server.doStart[444]-Started @3476ms
+2020/09/17 15:58:42.798[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48e92c5c: startup date [Thu Sep 17 15:58:40 CST 2020]; root of context hierarchy
+2020/09/17 15:58:42.849[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 15:58:42.850[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 15:58:42.851[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 15:58:42.851[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 15:58:42.852[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 15:58:42.853[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 15:58:42.853[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 15:58:42.884[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 15:58:42.884[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 15:58:43.017[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 15:58:43.385[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 15:58:43.398[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 15:58:43.410[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 15:58:43.410[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 15:58:43.421[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020/09/17 15:58:43.433[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@595f9916{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 15:58:43.435[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/17 15:58:43.438[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 3.225 seconds (JVM running for 4.505)
+2020/09/17 15:59:27.031[||||][INFO] o.s.b.f.x.XmlBeanDefinitionReader.loadBeanDefinitions[317]-Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020/09/17 15:59:27.063[||||][INFO] o.s.j.s.SQLErrorCodesFactory.<init>[127]-SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2020/09/17 15:59:27.072[||||][ERROR] c.x.w.s.WalletObjectService.insertWalletObject[285]-Insert wallet object fail, user id is: 1
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'linkType' in 'field list'
+### The error may involve com.xxy.wallet.dao.WalletObjectDao.insertWalletObject-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_wallet_object (id, money, total, type, user_id, linkType, link_id, source_type, wallet_status, description, create_time, update_time) VALUES  (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'linkType' in 'field list'
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'linkType' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy58.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy73.insertWalletObject(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.insertWalletObject(Unknown Source)
+	at com.xxy.wallet.service.WalletObjectService.insertWalletObject(WalletObjectService.java:283)
+	at com.xxy.wallet.service.WalletObjectService.returnWalletResult(WalletObjectService.java:77)
+	at com.xxy.wallet.service.WalletObjectService$$FastClassBySpringCGLIB$$ae172351.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.xxy.wallet.service.WalletObjectService$$EnhancerBySpringCGLIB$$69449ac3.returnWalletResult(<generated>)
+	at com.xxy.wallet.controller.WalletObjectController.returnWalletResult(WalletObjectController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at com.xxy.wallet.filter.WalletFilter.doFilter(WalletFilter.java:48)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.io.ManagedSelector$$Lambda$14/947437179.run(Unknown Source)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'linkType' in 'field list'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2501)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy88.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy86.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 93 common frames omitted
+2020/09/17 15:59:27.117[||||][ERROR] c.x.w.s.WalletObjectService.returnWalletResult[148]-Send wallet fail, user id is: 1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+### The error may involve com.xxy.wallet.dao.WalletObjectDao.insertWalletObjDetail-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_wallet_object_detail (id, wallet_object_id, user_id, money, is_lucky_guy, create_time, update_time) VALUES  (null, ?, ?, ?, ?, ?, ?);
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+; SQL []; Column 'wallet_object_id' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:85)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy58.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy73.insertWalletObjDetail(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.insertWalletObjDetail(Unknown Source)
+	at com.xxy.wallet.service.WalletObjectService.returnWalletResult(WalletObjectService.java:138)
+	at com.xxy.wallet.service.WalletObjectService$$FastClassBySpringCGLIB$$ae172351.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.xxy.wallet.service.WalletObjectService$$EnhancerBySpringCGLIB$$69449ac3.returnWalletResult(<generated>)
+	at com.xxy.wallet.controller.WalletObjectController.returnWalletResult(WalletObjectController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at com.xxy.wallet.filter.WalletFilter.doFilter(WalletFilter.java:48)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.io.ManagedSelector$$Lambda$14/947437179.run(Unknown Source)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:935)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2501)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy88.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy86.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 92 common frames omitted
+2020/09/17 16:00:00.007[||||][INFO] c.x.w.s.q.WalletQuartzService.returnMoneySchedule[56]-can not get this lock , no need return money
+2020/09/17 16:00:00.009[||||][INFO] c.x.w.s.q.WalletQuartzService.returnMoneySchedule[65]-end of lock
+2020/09/17 16:01:00.003[||||][INFO] c.x.w.s.q.WalletQuartzService.returnMoneySchedule[56]-can not get this lock , no need return money
+2020/09/17 16:01:00.003[||||][INFO] c.x.w.s.q.WalletQuartzService.returnMoneySchedule[65]-end of lock
+2020/09/17 16:01:38.600[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48e92c5c: startup date [Thu Sep 17 15:58:40 CST 2020]; root of context hierarchy
+2020/09/17 16:01:38.602[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/17 16:01:38.610[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@595f9916{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:01:38.610[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:01:38.614[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:01:38.615[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@1934ad7c{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.1668850457353978521.6512/],UNAVAILABLE}
+2020/09/17 16:01:42.248[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 28276 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:01:42.250[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:01:42.283[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:01:42 CST 2020]; root of context hierarchy
+2020/09/17 16:01:42.728[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:01:43.169[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1889ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:01:43.227[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:01:43.228[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:01:43.369[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:01:43.370[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:01:43.371[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/17 16:01:43.376[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:01:43.376[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1093 ms
+2020/09/17 16:01:43.704[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:01:43.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:01:43.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:01:43.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:01:43.706[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:01:43.707[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:01:43.845[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@4214ae8f{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.7940754027659972520.6512/],AVAILABLE}
+2020/09/17 16:01:43.845[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2565ms
+2020/09/17 16:01:44.213[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:01:42 CST 2020]; root of context hierarchy
+2020/09/17 16:01:44.258[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:01:44.259[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:01:44.260[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 16:01:44.260[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 16:01:44.260[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 16:01:44.262[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:01:44.263[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 16:01:44.293[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:01:44.293[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:01:44.328[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:01:44.790[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 16:01:44.802[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 16:01:44.812[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:01:44.813[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 16:01:44.823[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020/09/17 16:01:44.833[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@3079c26a{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:01:44.835[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/17 16:01:44.838[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.773 seconds (JVM running for 3.558)
+2020/09/17 16:02:07.497[||||][INFO] o.s.b.f.x.XmlBeanDefinitionReader.loadBeanDefinitions[317]-Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2020/09/17 16:02:07.527[||||][INFO] o.s.j.s.SQLErrorCodesFactory.<init>[127]-SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2020/09/17 16:02:07.533[||||][ERROR] c.x.w.s.WalletObjectService.insertWalletObject[285]-Insert wallet object fail, user id is: 1
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as linkType, link_id, source_type, wallet_status, description, create_time, upda' at line 1
+### The error may involve com.xxy.wallet.dao.WalletObjectDao.insertWalletObject-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_wallet_object (id, money, total, type, user_id, link_type as linkType, link_id, source_type, wallet_status, description, create_time, update_time) VALUES  (null, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as linkType, link_id, source_type, wallet_status, description, create_time, upda' at line 1
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as linkType, link_id, source_type, wallet_status, description, create_time, upda' at line 1
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:231)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy58.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy73.insertWalletObject(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.insertWalletObject(Unknown Source)
+	at com.xxy.wallet.service.WalletObjectService.insertWalletObject(WalletObjectService.java:283)
+	at com.xxy.wallet.service.WalletObjectService.returnWalletResult(WalletObjectService.java:77)
+	at com.xxy.wallet.service.WalletObjectService$$FastClassBySpringCGLIB$$ae172351.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.xxy.wallet.service.WalletObjectService$$EnhancerBySpringCGLIB$$d8c3730c.returnWalletResult(<generated>)
+	at com.xxy.wallet.controller.WalletObjectController.returnWalletResult(WalletObjectController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at com.xxy.wallet.filter.WalletFilter.doFilter(WalletFilter.java:48)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.io.ManagedSelector$$Lambda$14/1430358188.run(Unknown Source)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as linkType, link_id, source_type, wallet_status, description, create_time, upda' at line 1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:943)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2501)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy88.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy86.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 93 common frames omitted
+2020/09/17 16:02:07.580[||||][ERROR] c.x.w.s.WalletObjectService.returnWalletResult[148]-Send wallet fail, user id is: 1
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+### The error may involve com.xxy.wallet.dao.WalletObjectDao.insertWalletObjDetail-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO tb_wallet_object_detail (id, wallet_object_id, user_id, money, is_lucky_guy, create_time, update_time) VALUES  (null, ?, ?, ?, ?, ?, ?);
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+; SQL []; Column 'wallet_object_id' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:85)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy58.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy73.insertWalletObjDetail(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy74.insertWalletObjDetail(Unknown Source)
+	at com.xxy.wallet.service.WalletObjectService.returnWalletResult(WalletObjectService.java:138)
+	at com.xxy.wallet.service.WalletObjectService$$FastClassBySpringCGLIB$$ae172351.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.xxy.wallet.service.WalletObjectService$$EnhancerBySpringCGLIB$$d8c3730c.returnWalletResult(<generated>)
+	at com.xxy.wallet.controller.WalletObjectController.returnWalletResult(WalletObjectController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:841)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1634)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:206)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at com.xxy.wallet.filter.WalletFilter.doFilter(WalletFilter.java:48)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1613)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1621)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:541)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:190)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:188)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1253)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:168)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:481)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:166)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1155)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:564)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:317)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:251)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:279)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:110)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:124)
+	at org.eclipse.jetty.util.thread.Invocable.invokePreferred(Invocable.java:128)
+	at org.eclipse.jetty.util.thread.Invocable$InvocableExecutor.invoke(Invocable.java:222)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:294)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.io.ManagedSelector$$Lambda$14/1430358188.run(Unknown Source)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:672)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:590)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'wallet_object_id' cannot be null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:935)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2501)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.tomcat.jdbc.pool.StatementFacade$StatementProxy.invoke(StatementFacade.java:114)
+	at com.sun.proxy.$Proxy88.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy86.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 92 common frames omitted
+2020/09/17 16:03:53.606[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:01:42 CST 2020]; root of context hierarchy
+2020/09/17 16:03:53.608[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/17 16:03:53.615[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@3079c26a{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:03:53.616[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:03:53.619[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:03:53.619[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@4214ae8f{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.7940754027659972520.6512/],UNAVAILABLE}
+2020/09/17 16:04:14.930[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 17188 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:04:14.932[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:04:14.959[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36bc55de: startup date [Thu Sep 17 16:04:14 CST 2020]; root of context hierarchy
+2020/09/17 16:04:15.503[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:04:15.996[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1871ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:04:16.055[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:04:16.056[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:04:16.228[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:04:16.229[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:04:16.230[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/17 16:04:16.236[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:04:16.236[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1277 ms
+2020/09/17 16:04:16.248[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 28304 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:04:16.250[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:04:16.290[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Thu Sep 17 16:04:16 CST 2020]; root of context hierarchy
+2020/09/17 16:04:16.559[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:04:16.561[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:04:16.561[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:04:16.562[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:04:16.562[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:04:16.562[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:04:16.687[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@3157e4c0{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.8615236052642639130.6512/],AVAILABLE}
+2020/09/17 16:04:16.687[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2564ms
+2020/09/17 16:04:16.763[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:04:17.016[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36bc55de: startup date [Thu Sep 17 16:04:14 CST 2020]; root of context hierarchy
+2020/09/17 16:04:17.159[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:17.160[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:17.160[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 16:04:17.161[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 16:04:17.161[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 16:04:17.163[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:17.163[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 16:04:17.186[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:17.186[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:17.213[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:17.274[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2106ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:04:17.330[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:04:17.332[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:04:17.445[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 16:04:17.455[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 16:04:17.464[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:04:17.464[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 16:04:17.474[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020/09/17 16:04:17.483[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@68b9834c{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:04:17.485[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/17 16:04:17.489[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.717 seconds (JVM running for 3.365)
+2020/09/17 16:04:17.504[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:04:17.505[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:04:17.506[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/17 16:04:17.510[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:04:17.510[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1220 ms
+2020/09/17 16:04:17.908[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:04:17.910[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:04:17.910[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:04:17.910[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:04:17.910[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:04:17.910[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:04:18.046[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@1526f71{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.1196924530342977450.6512/],AVAILABLE}
+2020/09/17 16:04:18.047[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2880ms
+2020/09/17 16:04:18.437[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Thu Sep 17 16:04:16 CST 2020]; root of context hierarchy
+2020/09/17 16:04:18.482[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:18.483[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:18.483[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 16:04:18.483[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 16:04:18.484[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 16:04:18.485[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:18.486[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 16:04:18.616[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:18.617[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:18.654[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:19.011[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 16:04:19.022[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 16:04:19.031[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:04:19.031[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 16:04:19.042[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2020/09/17 16:04:19.051[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@595f9916{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:04:19.051[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:04:19.056[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:04:19.056[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@1526f71{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.1196924530342977450.6512/],UNAVAILABLE}
+2020/09/17 16:04:19.058[||||][INFO] o.s.b.a.l.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport[101]-
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020/09/17 16:04:19.062[||||][ERROR] o.s.b.d.LoggingFailureAnalysisReporter.report[42]-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 6512 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6512 or configure this application to listen on another port.
+
+2020/09/17 16:04:19.064[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Thu Sep 17 16:04:16 CST 2020]; root of context hierarchy
+2020/09/17 16:04:19.065[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/17 16:04:29.011[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 37316 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:04:29.013[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:04:29.047[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:04:29 CST 2020]; root of context hierarchy
+2020/09/17 16:04:29.514[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:04:29.971[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1907ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:04:30.026[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:04:30.027[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:04:30.172[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:04:30.173[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:04:30.174[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/17 16:04:30.178[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:04:30.179[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1133 ms
+2020/09/17 16:04:30.561[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:04:30.563[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:04:30.563[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:04:30.563[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:04:30.564[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:04:30.564[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:04:30.696[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@9dada78{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4834808738140927698.6512/],AVAILABLE}
+2020/09/17 16:04:30.696[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2632ms
+2020/09/17 16:04:31.157[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:04:29 CST 2020]; root of context hierarchy
+2020/09/17 16:04:31.212[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:31.213[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:31.214[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 16:04:31.214[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 16:04:31.214[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 16:04:31.216[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:04:31.217[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 16:04:31.252[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:31.252[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:31.294[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:04:31.657[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 16:04:31.667[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 16:04:31.677[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:04:31.677[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 16:04:31.689[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2020/09/17 16:04:31.698[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@7b9e25bd{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:04:31.700[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/17 16:04:31.704[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.878 seconds (JVM running for 3.641)
+2020/09/17 16:10:00.203[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:04:29 CST 2020]; root of context hierarchy
+2020/09/17 16:10:00.205[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/17 16:10:00.213[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@7b9e25bd{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:10:00.213[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:10:00.217[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:10:00.217[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@9dada78{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4834808738140927698.6512/],UNAVAILABLE}
+2020/09/17 16:14:37.150[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 33284 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:14:37.152[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:14:37.182[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:14:37 CST 2020]; root of context hierarchy
+2020/09/17 16:14:37.650[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:14:38.111[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2379ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:14:38.166[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:14:38.167[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:14:38.307[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:14:38.308[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:14:38.309[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/17 16:14:38.313[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:14:38.314[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1132 ms
+2020/09/17 16:14:38.730[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:14:38.732[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:14:38.732[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:14:38.732[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:14:38.732[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:14:38.732[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:14:38.866[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@57efc6fd{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4311294709507425111.6512/],AVAILABLE}
+2020/09/17 16:14:38.866[||||][INFO] o.e.j.s.Server.doStart[444]-Started @3135ms
+2020/09/17 16:14:39.234[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:14:37 CST 2020]; root of context hierarchy
+2020/09/17 16:14:39.281[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:14:39.282[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 16:14:39.282[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:14:39.282[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 16:14:39.283[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 16:14:39.284[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:14:39.285[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 16:14:39.315[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:14:39.315[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:14:39.351[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:14:39.835[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 16:14:39.845[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 16:14:39.855[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:14:39.855[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 16:14:39.865[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020/09/17 16:14:39.875[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@3a02de6c{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:14:39.877[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/17 16:14:39.880[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.902 seconds (JVM running for 4.149)
+2020/09/17 16:19:49.419[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:14:37 CST 2020]; root of context hierarchy
+2020/09/17 16:19:49.421[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/17 16:19:49.429[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@3a02de6c{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:19:49.429[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:19:49.432[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:19:49.433[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@57efc6fd{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4311294709507425111.6512/],UNAVAILABLE}
+2020/09/17 16:20:23.246[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 15776 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:20:23.248[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:20:23.274[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:20:23 CST 2020]; root of context hierarchy
+2020/09/17 16:20:23.802[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:20:24.243[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1981ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:20:24.297[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:20:24.299[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:20:24.360[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:20:24.361[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:20:24.362[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/17 16:20:24.366[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:20:24.366[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1092 ms
+2020/09/17 16:20:24.740[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:20:24.742[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:20:24.743[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:20:24.743[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:20:24.743[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:20:24.743[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:20:24.871[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@4640195a{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4437153384698864055.6512/],AVAILABLE}
+2020/09/17 16:20:24.872[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2610ms
+2020/09/17 16:20:25.091[||||][WARN] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.refresh[550]-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'walletQuartzService' defined in file [D:\idea WorkSpace\redWallet\target\classes\com\xxy\wallet\service\quartz\WalletQuartzService.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+2020/09/17 16:20:25.095[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:20:25.100[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@4640195a{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4437153384698864055.6512/],UNAVAILABLE}
+2020/09/17 16:20:25.105[||||][INFO] o.s.b.a.l.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport[101]-
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020/09/17 16:20:25.111[||||][ERROR] o.s.b.SpringApplication.reportFailure[815]-Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'walletQuartzService' defined in file [D:\idea WorkSpace\redWallet\target\classes\com\xxy\wallet\service\quartz\WalletQuartzService.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.xxy.wallet.StartUp.main(StartUp.java:23)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:454)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 15 common frames omitted
+2020/09/17 16:29:12.997[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 6444 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:29:12.999[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:29:13.034[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Thu Sep 17 16:29:13 CST 2020]; root of context hierarchy
+2020/09/17 16:29:13.480[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:29:13.922[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @1887ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:29:13.976[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:29:13.977[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:29:14.114[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:29:14.116[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:29:14.116[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/17 16:29:14.121[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:29:14.121[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1087 ms
+2020/09/17 16:29:14.482[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:29:14.484[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:29:14.484[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:29:14.484[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:29:14.484[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:29:14.485[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:29:14.612[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6963b88c{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.6190129300493074429.6512/],AVAILABLE}
+2020/09/17 16:29:14.612[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2579ms
+2020/09/17 16:29:14.753[||||][WARN] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.refresh[550]-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'walletQuartzService' defined in file [D:\idea WorkSpace\redWallet\target\classes\com\xxy\wallet\service\quartz\WalletQuartzService.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+2020/09/17 16:29:14.756[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:29:14.762[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@6963b88c{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.6190129300493074429.6512/],UNAVAILABLE}
+2020/09/17 16:29:14.766[||||][INFO] o.s.b.a.l.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport[101]-
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020/09/17 16:29:14.772[||||][ERROR] o.s.b.SpringApplication.reportFailure[815]-Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'walletQuartzService' defined in file [D:\idea WorkSpace\redWallet\target\classes\com\xxy\wallet\service\quartz\WalletQuartzService.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.xxy.wallet.StartUp.main(StartUp.java:23)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:454)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 15 common frames omitted
+2020/09/17 16:33:57.212[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 14916 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:33:57.215[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:33:57.254[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c481ff2: startup date [Thu Sep 17 16:33:57 CST 2020]; root of context hierarchy
+2020/09/17 16:33:57.794[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:33:58.269[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2595ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:33:58.336[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:33:58.338[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:33:58.485[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:33:58.486[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:33:58.487[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/17 16:33:58.492[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:33:58.492[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1238 ms
+2020/09/17 16:33:58.913[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:33:58.915[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:33:58.915[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:33:58.916[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:33:58.916[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:33:58.916[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:33:59.088[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@68c9e023{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4897437807977793752.6512/],AVAILABLE}
+2020/09/17 16:33:59.088[||||][INFO] o.e.j.s.Server.doStart[444]-Started @3415ms
+2020/09/17 16:33:59.234[||||][WARN] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.refresh[550]-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'walletQuartzService' defined in file [D:\idea WorkSpace\redWallet\target\classes\com\xxy\wallet\service\quartz\WalletQuartzService.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+2020/09/17 16:33:59.237[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:33:59.243[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@68c9e023{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4897437807977793752.6512/],UNAVAILABLE}
+2020/09/17 16:33:59.248[||||][INFO] o.s.b.a.l.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport[101]-
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020/09/17 16:33:59.255[||||][ERROR] o.s.b.SpringApplication.reportFailure[815]-Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'walletQuartzService' defined in file [D:\idea WorkSpace\redWallet\target\classes\com\xxy\wallet\service\quartz\WalletQuartzService.class]: Initialization of bean failed; nested exception is java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.xxy.wallet.StartUp.main(StartUp.java:23)
+Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled method 'returnMoneySchedule': Cron expression must consist of 6 fields (found 7 in "10 * * * * ? *")
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.processScheduled(ScheduledAnnotationBeanPostProcessor.java:454)
+	at org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor.postProcessAfterInitialization(ScheduledAnnotationBeanPostProcessor.java:324)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 15 common frames omitted
+2020/09/17 16:35:53.121[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 10416 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:35:53.125[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:35:53.162[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:35:53 CST 2020]; root of context hierarchy
+2020/09/17 16:35:53.600[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:35:54.048[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2072ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:35:54.103[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:35:54.105[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:35:54.243[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:35:54.244[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:35:54.245[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 660000ms
+2020/09/17 16:35:54.249[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:35:54.250[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1088 ms
+2020/09/17 16:35:54.636[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:35:54.638[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:35:54.639[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:35:54.639[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:35:54.639[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:35:54.639[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:35:54.769[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@5b5b59{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.3859368832110503187.6512/],AVAILABLE}
+2020/09/17 16:35:54.770[||||][INFO] o.e.j.s.Server.doStart[444]-Started @2795ms
+2020/09/17 16:35:55.261[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:35:53 CST 2020]; root of context hierarchy
+2020/09/17 16:35:55.308[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:35:55.309[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:35:55.309[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 16:35:55.310[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 16:35:55.310[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 16:35:55.311[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:35:55.312[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 16:35:55.342[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:35:55.342[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:35:55.378[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:35:55.747[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 16:35:55.758[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 16:35:55.768[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:35:55.769[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 16:35:55.779[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020/09/17 16:35:55.792[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@43c7fe8a{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:35:55.794[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/17 16:35:55.798[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 2.868 seconds (JVM running for 3.823)
+2020/09/17 16:36:14.152[||||][INFO] c.x.w.s.q.WalletQuartzService.returnMoneySchedule[67]-no lock need to delete
+2020/09/17 16:36:14.156[||||][ERROR] o.s.s.s.TaskUtils$LoggingErrorHandler.handleError[95]-Unexpected error occurred in scheduled task.
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.RedisTemplate.delete(RedisTemplate.java:630)
+	at com.xxy.wallet.service.quartz.WalletQuartzService.returnMoneySchedule(WalletQuartzService.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 23 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 26 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 33 common frames omitted
+2020/09/17 16:36:26.610[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f010bf0: startup date [Thu Sep 17 16:35:53 CST 2020]; root of context hierarchy
+2020/09/17 16:36:26.612[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/17 16:36:26.616[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@43c7fe8a{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:36:26.616[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:36:26.628[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:36:26.629[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@5b5b59{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.3859368832110503187.6512/],UNAVAILABLE}
+2020/09/17 16:53:43.077[||||][INFO] c.x.w.StartUp.logStarting[48]-Starting StartUp on LAPTOP-94IK4O8C with PID 11948 (started by The Shy in D:\idea WorkSpace\redWallet)
+2020/09/17 16:53:43.080[||||][INFO] c.x.w.StartUp.logStartupProfileInfo[637]-No active profile set, falling back to default profiles: default
+2020/09/17 16:53:43.117[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh[582]-Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Thu Sep 17 16:53:43 CST 2020]; root of context hierarchy
+2020/09/17 16:53:43.727[||||][INFO] o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected[165]-Multiple Spring Data modules found, entering strict repository configuration mode!
+2020/09/17 16:53:44.222[||||][INFO] o.e.j.u.log.initialized[192]-Logging initialized @2697ms to org.eclipse.jetty.util.log.Slf4jLog
+2020/09/17 16:53:44.287[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer[176]-Server initialized with port: 6512
+2020/09/17 16:53:44.288[||||][INFO] o.e.j.s.Server.doStart[372]-jetty-9.4.4.v20170414
+2020/09/17 16:53:44.360[||||][INFO] o.e.j.s.session.doStart[364]-DefaultSessionIdManager workerName=node0
+2020/09/17 16:53:44.360[||||][INFO] o.e.j.s.session.doStart[369]-No SessionScavenger set, using defaults
+2020/09/17 16:53:44.362[||||][INFO] o.e.j.s.session.startScavenging[149]-Scavenging every 600000ms
+2020/09/17 16:53:44.366[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring embedded WebApplicationContext
+2020/09/17 16:53:44.366[||||][INFO] o.s.w.c.ContextLoader.prepareEmbeddedWebApplicationContext[276]-Root WebApplicationContext: initialization completed in 1249 ms
+2020/09/17 16:53:44.778[||||][INFO] o.s.b.w.s.ServletRegistrationBean.onStartup[190]-Mapping servlet: 'dispatcherServlet' to [/]
+2020/09/17 16:53:44.780[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'characterEncodingFilter' to: [/*]
+2020/09/17 16:53:44.780[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020/09/17 16:53:44.780[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020/09/17 16:53:44.780[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[258]-Mapping filter: 'requestContextFilter' to: [/*]
+2020/09/17 16:53:44.780[||||][INFO] o.s.b.w.s.FilterRegistrationBean.configure[271]-Mapping filter: 'WalletFilter' to urls: [/api/xxy/wallet/*]
+2020/09/17 16:53:44.949[||||][INFO] o.e.j.s.h.ContextHandler.doStart[788]-Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@f25f48a{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4794775065546224210.6512/],AVAILABLE}
+2020/09/17 16:53:44.950[||||][INFO] o.e.j.s.Server.doStart[444]-Started @3426ms
+2020/09/17 16:53:45.327[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache[534]-Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Thu Sep 17 16:53:43 CST 2020]; root of context hierarchy
+2020/09/17 16:53:45.375[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/accounts],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.AccountAndCard> com.xxy.wallet.controller.WalletAccountController.accountAndCardResult(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:53:45.376[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/status]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletObject> com.xxy.wallet.controller.WalletDetailController.walletStatus(java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.WalletGetStatusException
+2020/09/17 16:53:45.377[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/getWallet],methods=[GET]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.pojo.WalletAccount> com.xxy.wallet.controller.WalletDetailController.getWallet(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:53:45.377[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/grab],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ResultWalletObject> com.xxy.wallet.controller.WalletObjectController.grab(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer,java.lang.Integer) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException
+2020/09/17 16:53:45.377[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/api/xxy/wallet/send],methods=[POST]}" onto public com.xxy.wallet.pojo.Result<com.xxy.wallet.commen.bean.ReturnWallet> com.xxy.wallet.controller.WalletObjectController.returnWalletResult(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.xxy.wallet.commen.exception.ParamterErrorExcepiton,com.xxy.wallet.commen.exception.WalletNumberException,com.xxy.wallet.commen.exception.AccountAbnormalityException
+2020/09/17 16:53:45.379[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020/09/17 16:53:45.379[||||][INFO] o.s.w.s.m.m.a.RequestMappingHandlerMapping.register[543]-Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020/09/17 16:53:45.495[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:53:45.495[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:53:45.532[||||][INFO] o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler[362]-Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020/09/17 16:53:45.907[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated[431]-Registering beans for JMX exposure on startup
+2020/09/17 16:53:45.918[||||][INFO] o.s.s.a.ScheduledAnnotationBeanPostProcessor.finishRegistration[260]-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2020/09/17 16:53:45.928[||||][INFO] o.e.j.s.h.C.application.log[2221]-Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:53:45.928[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[489]-FrameworkServlet 'dispatcherServlet': initialization started
+2020/09/17 16:53:45.939[||||][INFO] o.s.w.s.DispatcherServlet.initServletBean[508]-FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2020/09/17 16:53:45.951[||||][INFO] o.e.j.s.AbstractConnector.doStart[280]-Started ServerConnector@5c448ef{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:53:45.953[||||][INFO] o.s.b.c.e.j.JettyEmbeddedServletContainer.start[144]-Jetty started on port(s) 6512 (http/1.1)
+2020/09/17 16:53:45.957[||||][INFO] c.x.w.StartUp.logStarted[57]-Started StartUp in 3.078 seconds (JVM running for 4.433)
+2020/09/17 16:54:14.137[||||][INFO] c.x.w.s.q.WalletQuartzService.returnMoneySchedule[67]-no lock need to delete
+2020/09/17 16:54:14.142[||||][ERROR] o.s.s.s.TaskUtils$LoggingErrorHandler.handleError[95]-Unexpected error occurred in scheduled task.
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.RedisTemplate.delete(RedisTemplate.java:630)
+	at com.xxy.wallet.service.quartz.WalletQuartzService.returnMoneySchedule(WalletQuartzService.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 23 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 26 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 33 common frames omitted
+2020/09/17 16:55:14.100[||||][INFO] c.x.w.s.q.WalletQuartzService.returnMoneySchedule[67]-no lock need to delete
+2020/09/17 16:55:14.100[||||][ERROR] o.s.s.s.TaskUtils$LoggingErrorHandler.handleError[95]-Unexpected error occurred in scheduled task.
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:204)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169)
+	at org.springframework.data.redis.core.RedisTemplate.delete(RedisTemplate.java:630)
+	at com.xxy.wallet.service.quartz.WalletQuartzService.returnMoneySchedule(WalletQuartzService.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:81)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:53)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194)
+	... 23 common frames omitted
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.ConnectException: Connection refused: connect
+	at redis.clients.jedis.Connection.connect(Connection.java:207)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:93)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1767)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:106)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:49)
+	... 26 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:184)
+	... 33 common frames omitted
+2020/09/17 16:55:45.574[||||][INFO] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose[987]-Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63787180: startup date [Thu Sep 17 16:53:43 CST 2020]; root of context hierarchy
+2020/09/17 16:55:45.575[||||][INFO] o.s.j.e.a.AnnotationMBeanExporter.destroy[449]-Unregistering JMX-exposed beans on shutdown
+2020/09/17 16:55:45.580[||||][INFO] o.e.j.s.AbstractConnector.doStop[320]-Stopped ServerConnector@5c448ef{HTTP/1.1,[http/1.1]}{0.0.0.0:6512}
+2020/09/17 16:55:45.580[||||][INFO] o.e.j.s.session.stopScavenging[167]-Stopped scavenging
+2020/09/17 16:55:45.584[||||][INFO] o.e.j.s.h.C.application.log[2221]-Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020/09/17 16:55:45.585[||||][INFO] o.e.j.s.h.ContextHandler.doStop[957]-Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@f25f48a{/,[file:///C:/Users/The%20Shy/AppData/Local/Temp/jetty-docbase.4794775065546224210.6512/],UNAVAILABLE}
